@@ -7,7 +7,7 @@
   
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve src"
+    "start": "npm start" // Cambia esta línea
   },
   "keywords": [],
   "author": "",
