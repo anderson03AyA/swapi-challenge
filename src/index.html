@@ -1,22 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars SPA</title>
-</head>
-<body>
-    <button id="btnPeople" onclick="fnpeople()">people</button>
-    <button id="btnPlanets" onclick="fnplanets()">planets</button>
-    <button id="btnStarships" onclick="fnStarships()">startships</button>
-    <br>
-    <div id="seleccionado" style="background-color: blanchedalmond;">
-
-    </div>
-    <input type="text" id="search" placeholder="buscar">
-    <button id="send"> buscar </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWAPI</title>
+  </head>
+  <body>
+    <div id="seleccionado" style="background-color: blanchedalmond"></div>
+    <input type="text" id="search" placeholder="buscar en la api de swapi" />
+    <button id="btnPeople">People</button>
+    <button id="btnPlanets">Planets</button>
+    <button id="btnStarships">Starships</button>
     <div id="app"></div>
-    <script src="src/app.js"></script>
-</body>
-<script src = "app.js"></script>
+    <!-- utilidades -->
+    <div id="loading" style="display: none">Cargando...</div>
+    <div id="container">
+      <div id="searchSimple"></div>
+      <button id="mostrarMas" style="display: none">mostrar mas</button>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal" style="display: none">
+      <div class="modal-contentainer">
+        <span class="close" id="closeModal">&times;</span>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
