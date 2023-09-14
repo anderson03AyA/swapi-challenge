@@ -1,4 +1,3 @@
-// URL de la API de SWAPI para obtener información sobre un personaje específico
 let opcion = "planets";
 
 const people = document.getElementById("btnPeople");
